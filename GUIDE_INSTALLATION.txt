@@ -1,0 +1,30 @@
+# AutoReview — Guide d'installation
+
+## Étape 1 — Installe les librairies Python
+Ouvre le terminal (cmd) et colle cette commande :
+
+pip install anthropic google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+
+## Étape 2 — Prépare ton dossier
+Crée un dossier "AutoReview" sur ton bureau et mets-y :
+- autoreview.py (le script)
+- client_secret.json (ton fichier JSON Google)
+
+## Étape 3 — Configure le script
+Ouvre autoreview.py avec le Bloc-notes et change :
+- ANTHROPIC_API_KEY = "ta clé Anthropic ici"
+- BUSINESS_NAME = "Nom du commerce du client"
+- BUSINESS_TYPE = "type de commerce (restaurant, coiffeur...)"
+
+## Étape 4 — Lance le script
+Dans le terminal, va dans ton dossier :
+cd Desktop/AutoReview
+
+Puis lance :
+python autoreview.py
+
+## Première utilisation
+Une fenêtre de navigateur va s'ouvrir pour autoriser l'accès Google.
+Connecte-toi avec le compte Google Business du client.
+Accepte les permissions.
+Le script tourne ensuite en arrière-plan automatiquement.
